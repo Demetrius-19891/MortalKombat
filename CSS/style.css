@@ -42,6 +42,7 @@ a {
     color: white;
 }
 .film {
+    height: calc(100% - 152px);
     width: 90%;
     max-width: 1146px;
     margin: auto;
