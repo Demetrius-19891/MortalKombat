@@ -37,7 +37,7 @@ a {
     margin-right: 15px;
 }
 .app {
-    background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url(../img/cover-image.jpg) no-repeat top right;
+    background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url(../img/cover-image.jpg) no-repeat center right;
     min-height: 100vh;
     color: white;
 }
@@ -51,6 +51,7 @@ a {
 .tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     color: #e5e5e5;
     opacity: 0.4;
@@ -59,6 +60,7 @@ a {
 }
 .tags > * {
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 .age {
     border: 1px solid #FFFFFF;
@@ -92,3 +94,41 @@ a {
     vertical-align: text-bottom;
 }
 
+@media (max-width: 1200px) {
+    .app {
+        background-size: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .app {
+        height: auto;
+        padding-bottom: 400px;
+        background-position: bottom center;
+    }
+    .film {
+        padding-top: 2%;
+    }
+    .description {
+        font-size: 16px;
+        max-width: 333px;
+    }
+    .film-logo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .button-text {
+        display: none;
+    }
+    .user-name {
+        display: none;
+    }
+    .app {
+        padding-bottom: 350px;
+        background-size: 400px;
+    }
+    .button {
+        margin-bottom: 10px;
+    }
+}
