@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 <body>
     <div class="app" id="app">
@@ -32,14 +33,15 @@
             <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
             <div class="button-group">
                 <button class="button button-primary">Предзаказ фильма</button>
-                <button class="button button-default">
+                <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA&ab_channel=%D0%92%D0%A0%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3%D0%B5" class="button button-default">
                     <img src="img/button-icon.svg" alt="icon-play" class="button-icon">
                     <span class="button-text">Смотреть трейлер</span>
-                </button>
+                </a>
             </div>
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/jquery.vide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
